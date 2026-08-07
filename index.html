@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código Divino — Comprende la Biblia de principio a fin con claridad y profundidad</title>
+  <meta name="description" content="Estudio bíblico visual y didáctico que revela los misterios y enseñanzas de toda la Biblia desde Génesis hasta Apocalipsis. Acceso digital inmediato por $9.99 USD.">
+
+  <!-- Lucide Icons & Google Fonts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- GSAP & Lenis Smooth Scroll CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- TOP URGENCY ANNOUNCEMENT BAR -->
+  <div class="top-bar">
+    <span>🔥 <strong>OFERTA DE LANZAMIENTO:</strong> 67% DE DESCUENTO — PAGO ÚNICO Y ACCESO VITALICIO</span>
+    <div class="timer-box">
+      ⏰ Termina en: <span id="top-timer">14:59</span>
+    </div>
+  </div>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">
+        <i data-lucide="book-open-check"></i>
+        <span>CÓDIGO <span class="text-gold">DIVINO</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#contenido" class="nav-link">¿Qué incluye?</a></li>
+          <li><a href="#audiencia" class="nav-link">¿Para quién es?</a></li>
+          <li><a href="#bonos" class="nav-link">5 Bonos Gratis</a></li>
+          <li><a href="#garantia" class="nav-link">Garantía</a></li>
+          <li><a href="#preguntas" class="nav-link">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <a href="#checkout" class="header-cta">
+        <i data-lucide="shopping-cart"></i>
+        <span>Obtener por $9.99 USD</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i data-lucide="sparkles"></i>
+          <span>Biblioteca Digital de Estudio Bíblico Visual</span>
+        </div>
+
+        <h1 class="hero-title">
+          Comprende la Biblia de principio a fin con <span class="text-gold">claridad, profundidad y poder</span>
+        </h1>
+
+        <p class="hero-description">
+          Un estudio visual y didáctico que revela los misterios y enseñanzas de toda la Biblia de forma clara, organizada y accesible para todos. Transforma horas de duda en minutos de entendimiento visual.
+        </p>
+
+        <div class="hero-features">
+          <div class="feature-pill"><i data-lucide="zap" class="text-gold"></i> Acceso Inmediato y Vitalicio</div>
+          <div class="feature-pill"><i data-lucide="file-text" class="text-gold"></i> Formato Digital PDF HD</div>
+          <div class="feature-pill"><i data-lucide="shield-check" class="text-gold"></i> Garantía 7 Días</div>
+        </div>
+
+        <!-- MOCKED CTA ACTION LINK -->
+        <div class="placeholder-badge">
+          <i data-lucide="link"></i> [ENLACE DE CHECKOUT: Cambiar destino de botón a tu pasarela de pago o Hotmart]
+        </div>
+
+        <a href="#checkout" class="btn-primary">
+          <span>¡SÍ, QUIERO EL ACCESO VITALICIO POR SOLO $9.99 USD!</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <div class="btn-subtext">
+          <i data-lucide="lock" size="14"></i>
+          <span>Pago 100% Seguro. Precio normal: <span style="text-decoration: line-through;">$29.99 USD</span></span>
+        </div>
+
+        <div class="hero-social-proof">
+          <div class="avatar-group">
+            <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80')"></div>
+            <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80')"></div>
+            <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80')"></div>
+            <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80')"></div>
+          </div>
+          <div class="proof-text">
+            <div class="proof-stars">★★★★★ 4.9/5</div>
+            <span>Más de <strong>4,000 estudiantes y líderes</strong> ya están estudiando con Código Divino</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL MOCKUP -->
+      <div class="hero-visual">
+        <div class="mockup-container">
+          <div class="mockup-placeholder-label">
+            <i data-lucide="image"></i> [MOCKUP PRINCIPAL: assets/codigo_divino_mockup.png]
+          </div>
+          <div class="product-mockup-frame">
+            <img src="assets/codigo_divino_mockup.png" alt="Mockup Oficial Código Divino Biblioteca Digital" id="hero-mockup-img">
+            <div class="price-tag-floating">
+              <div class="old-price">De $29.99 USD</div>
+              <div class="current-price">$9.99 USD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS & SOLUTIONS SECTION -->
+  <section class="pain-section">
+    <div class="container">
+      <div class="section-tag">
+        <i data-lucide="alert-circle"></i> ¿Te sientes identificado?
+      </div>
+      <h2 class="section-title">¿Te ha pasado esto al intentar estudiar la Biblia?</h2>
+      <p class="section-subtitle">
+        Muchas personas aman la Palabra de Dios, pero se enfrentan a barreras que frenan su crecimiento espiritual.
+      </p>
+
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon"><i data-lucide="help-circle"></i></div>
+          <h3>Frustración y sensación de estar "perdido"</h3>
+          <p>Tratar de leer la Biblia sin comprender el contexto histórico, cultural y la línea del tiempo genera confusión y desánimo.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon"><i data-lucide="brain-circuit"></i></div>
+          <h3>Dificultad para memorizar e interpretar</h3>
+          <p>Quedarse estancado en versículos o pasajes simbólicos complejos sin saber cómo explicarlos o aplicarlos en la vida diaria.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon"><i data-lucide="clock-alert"></i></div>
+          <h3>Falta de tiempo y material didáctico</h3>
+          <p>No contar con resúmenes o esquemas visuales de calidad para preparar predicaciones, clases de escuela dominical o estudios familiares.</p>
+        </div>
+      </div>
+
+      <div class="solution-banner">
+        <h3>✨ La Solución Definitiva: <span class="text-gold">Código Divino</span></h3>
+        <p>Convertimos textos complejos en mapas visuales, resúmenes esquemáticos e ilustraciones claras para que aprendas el mensaje verdadero de Dios sin esfuerzo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARGET AUDIENCE SECTION -->
+  <section class="audience-section" id="audiencia">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="users"></i> Público Ideal</div>
+      <h2 class="section-title">¿Para quién es <span class="text-gold">Código Divino</span>?</h2>
+      <p class="section-subtitle">
+        Diseñado tanto para quienes enseñan la Palabra como para quienes están dando sus primeros pasos en la fe.
+      </p>
+
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-icon-wrapper">
+            <i data-lucide="graduation-cap" size="32"></i>
+          </div>
+          <h3>Profesores y Pastores</h3>
+          <p>Prepara tus lecciones, sermones y discipulados con esquemas listos, datos cronológicos y explicaciones profundas.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon-wrapper">
+            <i data-lucide="book-open" size="32"></i>
+          </div>
+          <h3>Estudiantes y Nuevos Convertidos</h3>
+          <p>Entiende el Antiguo y Nuevo Testamento de forma rápida sin sentirte abrumado por tecnicismos difíciles.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon-wrapper">
+            <i data-lucide="users-round" size="32"></i>
+          </div>
+          <h3>Líderes de Células y Grupos</h3>
+          <p>Dirige reuniones dinámicas con material visual de alto impacto que despierta el interés de todos los asistentes.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon-wrapper">
+            <i data-lucide="home" size="32"></i>
+          </div>
+          <h3>Familias y Devocionales</h3>
+          <p>Enseña historias bíblicas de forma didáctica a niños y adultos en la comodidad de tu hogar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT CONTENT SECTION -->
+  <section class="content-section" id="contenido">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="package"></i> Contenido Principal</div>
+      <h2 class="section-title">Lo que vas a recibir en tu <span class="text-gold">Biblioteca Digital</span></h2>
+      <p class="section-subtitle">
+        Un paquete completo de materiales descargables en PDF listos para leer en tu celular, tablet o imprimir.
+      </p>
+
+      <div class="content-grid">
+        <!-- ITEM 1 -->
+        <div class="content-card">
+          <div class="mockup-container" style="border-radius: 0; border: none; padding: 0;">
+            <div class="mockup-placeholder-label"><i data-lucide="image"></i> [FOTO MÓDULO 1]</div>
+            <div class="content-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80" alt="Estudio Completo Génesis al Apocalipsis">
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="content-tag">Módulo Principal</div>
+            <h3>Estudio Completo (Génesis al Apocalipsis)</h3>
+            <p>Biblioteca exhaustiva con resúmenes visuales, ilustraciones explicativas y anotaciones versículo por versículo de los 66 libros bíblicos.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="content-card">
+          <div class="mockup-container" style="border-radius: 0; border: none; padding: 0;">
+            <div class="mockup-placeholder-label"><i data-lucide="image"></i> [FOTO MÓDULO 2]</div>
+            <div class="content-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&auto=format&fit=crop&q=80" alt="170 Bosquejos de Josué">
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="content-tag">Guía Temática</div>
+            <h3>170 Bosquejos de Josué</h3>
+            <p>Esquemas temáticos estructurados con enseñanzas bíblicas claves, aplicaciones prácticas e inspiradoras oraciones guiadas.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="content-card">
+          <div class="mockup-container" style="border-radius: 0; border: none; padding: 0;">
+            <div class="mockup-placeholder-label"><i data-lucide="image"></i> [FOTO MÓDULO 3]</div>
+            <div class="content-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=600&auto=format&fit=crop&q=80" alt="30 Días de Oración Pentateuco">
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="content-tag">Devocional</div>
+            <h3>30 Días de Oración (Pentateuco)</h3>
+            <p>Guía devocional diaria basada en los primeros cinco libros de la Biblia para fortalecer tu hábito de oración con propósito.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="content-card">
+          <div class="mockup-container" style="border-radius: 0; border: none; padding: 0;">
+            <div class="mockup-placeholder-label"><i data-lucide="image"></i> [FOTO MÓDULO 4]</div>
+            <div class="content-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&auto=format&fit=crop&q=80" alt="Génesis, Éxodo y Levítico Explicados">
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="content-tag">Estudio Profundo</div>
+            <h3>Génesis, Éxodo y Levítico Explicados</h3>
+            <p>Análisis versículo por versículo de las raíces de la fe, leyes de Dios, símbolos del tabernáculo y su cumplimiento espiritual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUSES SECTION -->
+  <section class="bonus-section" id="bonos">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="gift"></i> Regalos Exclusivos</div>
+      <h2 class="section-title">🎁 Te llevas gratis estos <span class="text-gold">5 Bonos Especiales</span></h2>
+      <p class="section-subtitle">
+        Valorados en más de <strong>$49.00 USD</strong>. Incluidos HOY sin ningún costo adicional con tu acceso a Código Divino.
+      </p>
+
+      <div class="bonus-grid">
+        <!-- BONO 1 -->
+        <div class="bonus-card">
+          <div class="bonus-badge">GRATIS HOY</div>
+          <div class="bonus-number">BONO 1</div>
+          <h3>Los 10 Mandamientos</h3>
+          <p>Histórica explicación de las tablas de la ley y cómo aplicar cada mandamiento de forma práctica a la vida cotidiana moderna.</p>
+          <div class="bonus-value">Valor individual: <span>$12.00 USD</span> <strong>→ GRATIS</strong></div>
+        </div>
+
+        <!-- BONO 2 -->
+        <div class="bonus-card">
+          <div class="bonus-badge">GRATIS HOY</div>
+          <div class="bonus-number">BONO 2</div>
+          <h3>Milagros de Jesús</h3>
+          <p>Contexto histórico y espiritual de los prodigios de Cristo, con lecciones devocionales para activar tu fe.</p>
+          <div class="bonus-value">Valor individual: <span>$10.00 USD</span> <strong>→ GRATIS</strong></div>
+        </div>
+
+        <!-- BONO 3 -->
+        <div class="bonus-card">
+          <div class="bonus-badge">GRATIS HOY</div>
+          <div class="bonus-number">BONO 3</div>
+          <h3>Historias Bíblicas para Toda la Familia</h3>
+          <p>Colección visual e ilustrada resumida del Antiguo y Nuevo Testamento ideal para compartir y enseñar a los hijos.</p>
+          <div class="bonus-value">Valor individual: <span>$15.00 USD</span> <strong>→ GRATIS</strong></div>
+        </div>
+
+        <!-- BONO 4 -->
+        <div class="bonus-card">
+          <div class="bonus-badge">GRATIS HOY</div>
+          <div class="bonus-number">BONO 4</div>
+          <h3>Devocionales de Poder</h3>
+          <p>30 días de meditaciones intensas, versículos claves comentados y reflexiones de fortaleza para momentos difíciles.</p>
+          <div class="bonus-value">Valor individual: <span>$12.00 USD</span> <strong>→ GRATIS</strong></div>
+        </div>
+
+        <!-- BONO 5 -->
+        <div class="bonus-card">
+          <div class="bonus-badge">GRATIS HOY</div>
+          <div class="bonus-number">BONO 5</div>
+          <h3>Manual de Hermenéutica para Principiantes</h3>
+          <p>Guía práctica de interpretación bíblica fácil para evitar errores doctrinales y entender el sentido original del texto.</p>
+          <div class="bonus-value">Valor individual: <span>$10.00 USD</span> <strong>→ GRATIS</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE SECTION -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="scale"></i> Comparativa</div>
+      <h2 class="section-title">¿Por qué elegir <span class="text-gold">Código Divino</span>?</h2>
+      
+      <div class="table-wrapper">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th>Lectura Tradicional / Libros</th>
+              <th>Código Divino (Biblioteca Visual)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Comprensión Didáctica Visual</td>
+              <td><i data-lucide="x" class="icon-cross"></i> Solo texto continuo largo</td>
+              <td><i data-lucide="check" class="icon-check"></i> Esquemas, diagramas y resúmenes en PDF</td>
+            </tr>
+            <tr>
+              <td>Explicación Versículo por Versículo</td>
+              <td><i data-lucide="x" class="icon-cross"></i> Comentarios densos y complejos</td>
+              <td><i data-lucide="check" class="icon-check"></i> Lenguaje claro y adaptado a todos</td>
+            </tr>
+            <tr>
+              <td>Portabilidad y Formato Digital</td>
+              <td><i data-lucide="x" class="icon-cross"></i> Libros pesados y costosos</td>
+              <td><i data-lucide="check" class="icon-check"></i> PDF compatible en móvil, tablet o laptop</td>
+            </tr>
+            <tr>
+              <td>Bosquejos y Material de Enseñanza</td>
+              <td><i data-lucide="x" class="icon-cross"></i> Requiere horas de preparación</td>
+              <td><i data-lucide="check" class="icon-check"></i> 170 Bosquejos listos para usar</td>
+            </tr>
+            <tr>
+              <td>Precio Accesible y Pago Único</td>
+              <td><i data-lucide="x" class="icon-cross"></i> Comentarios de más de $100 USD</td>
+              <td><i data-lucide="check" class="icon-check"></i> Solo $9.99 USD con acceso vitalicio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE SECTION -->
+  <section class="guarantee-section" id="garantia">
+    <div class="container">
+      <div class="guarantee-box">
+        <div class="guarantee-seal-wrapper">
+          <div class="mockup-container" style="border-radius: 50%;">
+            <div class="mockup-placeholder-label" style="top: -10px; right: 0;"><i data-lucide="shield"></i> [SELLO GUARANTY: assets/garantia_7_dias.png]</div>
+            <img src="assets/garantia_7_dias.png" alt="Garantía de 7 días 100% Incondicional">
+          </div>
+        </div>
+        <div class="guarantee-content">
+          <div class="section-tag"><i data-lucide="shield-check"></i> Sin Riesgo Para Ti</div>
+          <h3>Prueba Código Divino durante 7 Días Incondicionales</h3>
+          <p>
+            Estamos tan seguros de la calidad y del impacto espiritual que tendrá este material en tu vida, que te ofrecemos una <strong>Garantía Incondicional de 7 Días</strong>.
+            Si dentro de los primeros 7 días sientes que este contenido no cumple tus expectativas, solo escríbenos y te reembolsaremos el <strong>100% de tu dinero inmediatamente</strong>. Sin preguntas y sin complicaciones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKOUT / OFFER SECTION -->
+  <section class="checkout-section" id="checkout">
+    <div class="container">
+      <div class="offer-card">
+        <div class="offer-badge">OFERTA DE LANZAMIENTO LIMITADA</div>
+        
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-top: 1rem;">
+          Consigue Hoy la Biblioteca Completa <span class="text-gold">Código Divino</span>
+        </h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">
+          Acceso instantáneo e ilimitado a todos los estudios, bosquejos y los 5 bonos incluidos.
+        </p>
+
+        <div class="offer-prices">
+          <div class="offer-regular">Precio Normal: <span>$29.99 USD</span> + ($49 USD en bonos)</div>
+          <div class="offer-main">$9.99 <span style="font-size: 1.5rem; font-family: var(--font-body); font-weight: 500;">USD</span></div>
+          <div class="offer-subtext">✨ Un solo pago único. Sin mensualidades ni cobros ocultos.</div>
+        </div>
+
+        <ul class="offer-includes-list">
+          <li><i data-lucide="check-circle-2"></i> <span>Estudio Completo Génesis a Apocalipsis (PDF HD)</span></li>
+          <li><i data-lucide="check-circle-2"></i> <span>170 Bosquejos temáticos de Josué</span></li>
+          <li><i data-lucide="check-circle-2"></i> <span>30 Días de Oración en el Pentateuco</span></li>
+          <li><i data-lucide="check-circle-2"></i> <span>Génesis, Éxodo y Levítico versículo por versículo</span></li>
+          <li><i data-lucide="check-circle-2"></i> <strong class="text-gold">LOS 5 BONOS GRATUITOS (Valorados en $49 USD)</strong></li>
+          <li><i data-lucide="check-circle-2"></i> <span>Acceso Vitalicio y Descarga Inmediata</span></li>
+        </ul>
+
+        <!-- MOCKED INTEGRATED CHECKOUT BOX -->
+        <div class="checkout-embed-box">
+          <div class="placeholder-badge">
+            <i data-lucide="code"></i> [ZONA MOCKUP DE FORMULARIO / INTEGRACIÓN CHECKOUT HOTMART / STRIPE]
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.8rem 0 1.2rem 0;">
+            Ingresa tu correo para recibir el enlace de descarga oficial de la biblioteca:
+          </p>
+
+          <form id="mock-checkout-form" onsubmit="event.preventDefault(); triggerCheckoutRedirect();">
+            <input type="email" id="user-email" placeholder="Escribe tu correo electrónico aquí..." required>
+            
+            <button type="submit" class="btn-primary" style="margin: 0 auto; width: 100%;">
+              <i data-lucide="credit-card"></i>
+              <span>IR AL CHECKOUT SEGURO ($9.99 USD)</span>
+            </button>
+          </form>
+
+          <div class="payment-badges">
+            <span><i data-lucide="lock" size="14"></i> Encriptación SSL 256-bit</span>
+            <span><i data-lucide="check" size="14"></i> Entrega Inmediata por Email</span>
+            <span><i data-lucide="shield" size="14"></i> Garantía de 7 Días</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="preguntas">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="help-circle"></i> Dudas Frecuentes</div>
+      <h2 class="section-title">Preguntas Resueltas</h2>
+      
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo recibo el material tras realizar la compra?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            El acceso es 100% digital e inmediato. Recibirás un correo electrónico automático con las credenciales de descarga directa para guardar todos los archivos PDF en tu computadora, tablet o teléfono móvil.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Es un único pago o una suscripción mensual?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Es un pago ÚNICO de $9.99 USD. No hay ninguna mensualidad ni cobro recurrente. Tienes acceso de por vida a los materiales y a sus futuras actualizaciones.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo imprimir los e-books si prefiero leer en papel?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            ¡Sí, totalmente! Todos los archivos vienen configurados en formato PDF de alta definición (HD), optimizados tanto para lectura en pantallas como para impresión física si deseas encuadernar tu estudio.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué ocurre si el contenido no es lo que esperaba?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Cuentas con nuestra Garantía Incondicional de 7 días. Si por cualquier razón sientes que no fue útil para ti, nos envías un mensaje y te reembolsamos el 100% de tu dinero de manera inmediata.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo pagar en la moneda de mi país?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Sí. La plataforma procesadora de pago convierte automáticamente la tarifa de $9.99 USD a la moneda local de tu país al momento de pagar (admitiendo tarjetas de crédito/débito, PayPal y métodos locales).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast">
+    <div class="toast-avatar">CD</div>
+    <div class="toast-content">
+      <strong id="toast-name">Carlos M. de México</strong>
+      <span>Acaba de adquirir Código Divino hace 2 minutos 🔥</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>CÓDIGO DIVINO</strong> — Biblioteca Digital de Estudio Bíblico Visual</p>
+      <p style="margin-top: 0.5rem; font-size: 0.82rem;">Material utilizado por más de 4,000 líderes, estudiantes y familias en toda Latinoamérica.</p>
+      
+      <div class="footer-links">
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Políticas de Privacidad</a>
+        <a href="#">Soporte al Cliente</a>
+      </div>
+      
+      <p style="margin-top: 1.5rem; font-size: 0.78rem; opacity: 0.6;">
+        Copyright © 2026 Código Divino. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
