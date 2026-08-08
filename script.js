@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .from('.hero-title',                   { opacity: 0, y: 30,  duration: 0.8, ease: 'power2.out' }, '-=0.3')
       .from('.hero-description',             { opacity: 0, y: 20,  duration: 0.6, ease: 'power2.out' }, '-=0.4')
       .from('.hero-features .feature-pill',  { opacity: 0, y: 15,  stagger: 0.1, duration: 0.5      }, '-=0.3')
-      .from('.btn-primary',                  { opacity: 0, scale: 0.9, duration: 0.6                 }, '-=0.2')
+      .from('.hero-content .btn-primary',    { opacity: 0, scale: 0.9, duration: 0.6                 }, '-=0.2')
       .from('.product-mockup-frame',         { opacity: 0, scale: 0.95, duration: 0.8               }, '-=0.6');
   }
 
@@ -150,13 +150,15 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(showToast, 14000);
 });
 
-// ── 8. Mocked Checkout ────────────────────────────────────────────────────
+// ── 8. Kiwify Checkout Redirect ───────────────────────────────────────────
 function triggerCheckoutRedirect() {
   const emailInput = document.getElementById('user-email');
-  const email = emailInput ? emailInput.value : '';
-  if (!email) {
-    alert('Por favor, ingresa tu correo electrónico para continuar.');
-    return;
+  const email = emailInput ? emailInput.value.trim() : '';
+  const baseUrl = 'https://pay.kiwify.com/qBrAINL';
+  
+  if (email) {
+    window.location.href = `${baseUrl}?email=${encodeURIComponent(email)}`;
+  } else {
+    window.location.href = baseUrl;
   }
-  alert(`¡Excelente! El correo "${email}" ha sido registrado.\n\n📌 NOTA PARA EL DESARROLLADOR / CLIENTE:\nAquí es donde debes sustituir la URL o enlace de Checkout (Hotmart, Stripe, MercadoPago, etc.).\nPor ejemplo: window.location.href = "https://pay.hotmart.com/TU_CODIGO_DE_CHECKOUT";`);
 }
