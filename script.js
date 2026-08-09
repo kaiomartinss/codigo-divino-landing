@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof gsap !== 'undefined') {
     const heroTl = gsap.timeline({ delay: 0.1 });
     heroTl
-      .from('.hero-badge',                   { opacity: 0, y: -20, duration: 0.6, ease: 'power2.out' })
-      .from('.hero-title',                   { opacity: 0, y: 30,  duration: 0.8, ease: 'power2.out' }, '-=0.3')
-      .from('.hero-description',             { opacity: 0, y: 20,  duration: 0.6, ease: 'power2.out' }, '-=0.4')
-      .from('.hero-features .feature-pill',  { opacity: 0, y: 15,  stagger: 0.1, duration: 0.5      }, '-=0.3')
-      .from('.hero-content .btn-primary',    { opacity: 0, scale: 0.9, duration: 0.6                 }, '-=0.2')
-      .from('.product-mockup-frame',         { opacity: 0, scale: 0.95, duration: 0.8               }, '-=0.6');
+      .from('.hero-badge',                   { opacity: 0, y: -20, duration: 0.6, ease: 'power2.out', clearProps: 'all' })
+      .from('.hero-title',                   { opacity: 0, y: 30,  duration: 0.8, ease: 'power2.out', clearProps: 'all' }, '-=0.3')
+      .from('.hero-description',             { opacity: 0, y: 20,  duration: 0.6, ease: 'power2.out', clearProps: 'all' }, '-=0.4')
+      .from('.hero-features .feature-pill',  { opacity: 0, y: 15,  stagger: 0.1, duration: 0.5,      clearProps: 'all' }, '-=0.3')
+      .from('.product-mockup-frame',         { opacity: 0, scale: 0.95, duration: 0.8,               clearProps: 'all' }, '-=0.3');
+    // Nota: btn-primary removido da animação GSAP para evitar opacity:0 inline travado
   }
 
   // ── 4. Animações de Entrada via IntersectionObserver ─────────────────────
@@ -148,6 +148,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(showToast, 4000);
   setInterval(showToast, 14000);
+
+  // ── 9. Sticky Mobile Bottom CTA Bar Visibility ────────────────────────────
+  // Observa a hero-section inteira (não o botão, que pode ter opacity:0 do GSAP).
+  // Quando a hero-section sair da viewport, a barra aparece.
+  const stickyBar = document.getElementById('mobile-sticky-bar');
+  const heroSection = document.querySelector('.hero-section');
+
+  if (stickyBar && heroSection) {
+    const stickyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          stickyBar.classList.add('visible');
+        } else {
+          stickyBar.classList.remove('visible');
+        }
+      });
+    }, { root: null, threshold: 0 });
+
+    stickyObserver.observe(heroSection);
+  }
 });
 
 // ── 8. Kiwify Checkout Redirect ───────────────────────────────────────────
