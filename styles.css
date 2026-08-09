@@ -304,21 +304,54 @@ img {
 .header-cta {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: var(--green-cta);
+  gap: 10px;
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
   color: #FFFFFF;
-  padding: 0.6rem 1.4rem;
+  padding: 0.45rem 1.2rem;
   border-radius: 50px;
   font-weight: 700;
-  font-size: 0.9rem;
   box-shadow: var(--shadow-green);
   transition: all 0.3s ease;
 }
 
 .header-cta:hover {
-  background: var(--green-hover);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
   transform: translateY(-2px);
   box-shadow: 0 12px 25px rgba(16, 185, 129, 0.5);
+}
+
+.header-cta-price {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  gap: 1px;
+}
+
+.header-cta-old {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: line-through;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-cta-badge {
+  text-decoration: none;
+  background: #FACC15;
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 900;
+  padding: 1px 5px;
+  border-radius: 50px;
+  letter-spacing: 0.3px;
+}
+
+.header-cta-new {
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
 }
 
 /* --- Hero Section --- */
@@ -430,6 +463,70 @@ img {
 .btn-primary:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 15px 35px rgba(16, 185, 129, 0.55);
+}
+
+/* --- Button Price Layout (preço antigo + desconto + preço atual) --- */
+.btn-price-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.btn-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-discount-badge {
+  background: #FACC15;
+  color: #000000;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.btn-old-price {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: line-through;
+}
+
+.btn-main-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-action-text {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.btn-current-price {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding: 2px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.btn-checkout-cta {
+  max-width: 540px;
+  padding: 1.1rem 2rem;
 }
 
 .btn-subtext {
