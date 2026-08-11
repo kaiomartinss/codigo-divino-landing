@@ -187,14 +187,6 @@ img {
 .mockup-container {
   position: relative;
   border-radius: var(--radius-md);
-  border: 2px dashed rgba(255, 215, 0, 0.3);
-  padding: 8px;
-  background: rgba(19, 21, 34, 0.4);
-  transition: border-color 0.3s ease;
-}
-
-.mockup-container:hover {
-  border-color: var(--gold-primary);
 }
 
 .mockup-placeholder-label {
@@ -364,7 +356,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 .hero-badge {
@@ -578,6 +570,10 @@ img {
 /* --- Hero Image Visual Box --- */
 .hero-visual {
   position: relative;
+}
+
+.hero-visual-mobile {
+  display: none;
 }
 
 .product-mockup-frame {
@@ -1359,6 +1355,16 @@ img {
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-visual-mobile {
+    display: block;
+    margin: 1.5rem auto 2.2rem auto;
+    max-width: 480px;
   }
 
   .hero-features {
