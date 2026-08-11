@@ -7,25 +7,25 @@
 
 :root {
   /* Color Palette */
-  --bg-dark: #0A0B10;
-  --bg-card: #131522;
-  --bg-card-hover: #1A1D2E;
-  --bg-card-glass: rgba(19, 21, 34, 0.75);
-  --border-color: rgba(255, 215, 0, 0.15);
-  --border-glow: rgba(255, 215, 0, 0.4);
+  --bg-dark: #0A0F24;
+  --bg-card: #131A35;
+  --bg-card-hover: #1A2347;
+  --bg-card-glass: rgba(19, 26, 53, 0.85);
+  --border-color: rgba(217, 119, 6, 0.18);
+  --border-glow: rgba(217, 119, 6, 0.35);
 
   /* Brand Accents */
-  --gold-primary: #FFD700;
-  --gold-light: #FFE875;
-  --gold-dark: #C5A000;
-  --gold-gradient: linear-gradient(135deg, #FFE875 0%, #FFD700 50%, #B8860B 100%);
+  --gold-primary: #F59E0B;
+  --gold-light: #FBBF24;
+  --gold-dark: #D97706;
+  --gold-gradient: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
   
-  --green-cta: #10B981;
-  --green-hover: #059669;
-  --green-glow: rgba(16, 185, 129, 0.35);
+  --green-cta: #F59E0B;
+  --green-hover: #D97706;
+  --green-glow: rgba(245, 158, 11, 0.3);
 
-  --text-main: #F3F4F6;
-  --text-muted: #9CA3AF;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
   --text-gold: #F59E0B;
 
   /* Fonts */
@@ -36,9 +36,9 @@
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 24px;
-  --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.5);
-  --shadow-gold: 0 0 25px rgba(255, 215, 0, 0.25);
-  --shadow-green: 0 10px 25px rgba(16, 185, 129, 0.4);
+  --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.4);
+  --shadow-gold: 0 0 25px rgba(245, 158, 11, 0.25);
+  --shadow-green: 0 10px 25px rgba(245, 158, 11, 0.35);
 }
 
 /* --- Base Resets --- */
@@ -78,8 +78,8 @@ html.lenis, html.lenis body {
 body {
   background-color: var(--bg-dark);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 10% 40%, rgba(16, 185, 129, 0.04) 0%, transparent 40%);
+    radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.09) 0%, transparent 60%),
+    radial-gradient(circle at 10% 40%, rgba(19, 26, 53, 0.4) 0%, transparent 50%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -141,8 +141,8 @@ img {
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 1rem;
-  background: rgba(255, 215, 0, 0.1);
-  border: 1px solid rgba(255, 215, 0, 0.3);
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
   border-radius: 50px;
   color: var(--gold-primary);
   font-size: 0.85rem;
@@ -255,9 +255,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 90;
-  background: rgba(10, 11, 16, 0.85);
+  background: rgba(10, 15, 36, 0.85);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  border-bottom: 1px solid var(--border-color);
   padding: 1rem 0;
   transition: all 0.3s ease;
 }
@@ -281,7 +281,7 @@ img {
 
 .brand-logo svg {
   color: var(--gold-primary);
-  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
 }
 
 .nav-menu {
@@ -305,19 +305,19 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
   color: #FFFFFF;
   padding: 0.45rem 1.2rem;
   border-radius: 50px;
   font-weight: 700;
-  box-shadow: var(--shadow-green);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.15);
   transition: all 0.3s ease;
 }
 
 .header-cta:hover {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 12px 25px rgba(2, 132, 199, 0.25);
 }
 
 .header-cta-price {
@@ -371,7 +371,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(245, 158, 11, 0.08);
   border: 1px solid var(--border-glow);
   padding: 6px 14px;
   border-radius: 50px;
@@ -420,7 +420,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
   color: #FFFFFF;
   font-size: 1.15rem;
   font-weight: 800;
@@ -462,7 +462,7 @@ img {
 
 .btn-primary:hover {
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.55);
+  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.45);
 }
 
 /* --- Button Price Layout (preço antigo + desconto + preço atual) --- */
@@ -605,11 +605,11 @@ img {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-  border: 2px solid #34D399;
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
+  border: 2px solid var(--gold-light);
   padding: 12px 22px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.45);
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.35);
   backdrop-filter: blur(10px);
   text-align: center;
   text-decoration: none;
@@ -622,8 +622,8 @@ img {
 
 .price-tag-floating:hover {
   transform: scale(1.06) translateY(-2px);
-  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.65);
-  background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.45);
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
 }
 
 .price-tag-floating .old-price {
@@ -656,7 +656,7 @@ img {
 /* --- Pain Points Section --- */
 .pain-section {
   padding: 5rem 0;
-  background: rgba(19, 21, 34, 0.3);
+  background: rgba(19, 26, 53, 0.35);
   position: relative;
 }
 
@@ -668,8 +668,8 @@ img {
 }
 
 .pain-card {
-  background: var(--bg-card-glass);
-  border: 1px solid rgba(239, 68, 68, 0.2);
+  background: var(--bg-card);
+  border: 1px solid rgba(239, 68, 68, 0.12);
   border-radius: var(--radius-md);
   padding: 2rem;
   position: relative;
@@ -709,7 +709,7 @@ img {
 
 .solution-banner {
   margin-top: 4rem;
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(19, 26, 53, 0.4) 100%);
   border: 1px solid var(--border-glow);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
@@ -776,7 +776,7 @@ img {
 /* --- Product Content Section --- */
 .content-section {
   padding: 5rem 0;
-  background: rgba(19, 21, 34, 0.4);
+  background: rgba(19, 26, 53, 0.45);
 }
 
 .content-grid {
@@ -860,7 +860,7 @@ img {
 }
 
 .bonus-card {
-  background: linear-gradient(145deg, rgba(26, 29, 46, 0.9) 0%, rgba(19, 21, 34, 0.9) 100%);
+  background: linear-gradient(145deg, rgba(26, 35, 71, 0.9) 0%, rgba(19, 26, 53, 0.9) 100%);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 2rem;
@@ -942,11 +942,11 @@ img {
 
 .comp-table th, .comp-table td {
   padding: 1.2rem 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .comp-table th {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(245, 158, 11, 0.08);
   font-family: var(--font-heading);
   font-size: 1.05rem;
 }
@@ -974,7 +974,7 @@ img {
 }
 
 .guarantee-box {
-  background: linear-gradient(135deg, rgba(26, 29, 46, 0.95) 0%, rgba(19, 21, 34, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(19, 26, 53, 0.95) 0%, rgba(10, 15, 36, 0.95) 100%);
   border: 2px solid var(--gold-primary);
   border-radius: var(--radius-lg);
   padding: 3rem;
@@ -991,8 +991,8 @@ img {
   border-radius: 50%;
   border: 2px dashed var(--gold-primary);
   padding: 6px;
-  background: rgba(19, 21, 34, 0.6);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+  background: rgba(19, 26, 53, 0.6);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1033,7 +1033,7 @@ img {
   border: 2px solid var(--gold-primary);
   border-radius: var(--radius-lg);
   padding: 3.5rem 2.5rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), var(--shadow-gold);
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08), var(--shadow-gold);
   text-align: center;
   position: relative;
 }
@@ -1108,7 +1108,7 @@ img {
 .checkout-embed-box {
   margin-top: 2.5rem;
   padding: 2rem;
-  background: rgba(10, 11, 16, 0.8);
+  background: rgba(10, 15, 36, 0.8);
   border: 1px dashed var(--gold-primary);
   border-radius: var(--radius-md);
   text-align: center;
@@ -1208,9 +1208,9 @@ img {
   bottom: 25px;
   left: 25px;
   z-index: 999;
-  background: rgba(19, 21, 34, 0.95);
+  background: var(--bg-card-glass);
   border: 1px solid var(--gold-primary);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   padding: 12px 18px;
   display: flex;
@@ -1230,7 +1230,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background: var(--gold-primary);
-  color: #000;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1247,14 +1247,14 @@ img {
 }
 
 .toast-content span {
-  color: var(--gold-light);
+  color: var(--text-gold);
 }
 
 /* --- Footer --- */
 .site-footer {
-  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  border-top: 1px solid var(--border-color);
   padding: 3rem 0;
-  background: #06070A;
+  background: #060A1A;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -1301,13 +1301,13 @@ img {
   left: 0;
   right: 0;
   z-index: 990;
-  background: rgba(10, 11, 16, 0.95);
+  background: rgba(10, 15, 36, 0.95);
   backdrop-filter: blur(12px);
   border-top: 1px solid var(--border-glow);
   padding: 10px 16px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.4);
   transform: translateY(100%);
   transition: transform 0.4s ease;
 }
@@ -1339,7 +1339,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
   color: #FFFFFF;
   font-weight: 800;
   font-size: 0.95rem;
